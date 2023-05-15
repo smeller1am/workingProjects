@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cartProduct</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+   <link rel="stylesheet" href="./css/style.css?v=1.22">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__item">
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="aboutAs.html">
+                О нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="reviews.html">
+                Обзоры
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link openBasket" href="#modalBasket">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <a href="http://markup.spaceapp.ru/prohook2/">
+            <img class="logo" src="./images/logo.png" alt="логотип">
+          </a>
+        </div>
+        <div class="header__item">
+          <a class="menu__link" href="contacts.html">
+            Контакты
+          </a>
+          <a class="header__phone" href="tel:+78452758583">+7 (8452) 75-85-83</a>
+          <a class="header__basket" href="#modalBasket">
+            Корзина
+            <span class="header__basket-num">
+              3
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="swiper swiperBig">
+            <div class="swiper-wrapper swiperBig__wrapper">
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/1mini.png">
+              </div>
+              <div class=" swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/1mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/2mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/3mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/4mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/1mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/2mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/3mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/4mini.png">
+              </div>
+              <div class="swiper-slide swiperBig__slide">
+                <img class="swiperBig__image" src="./images/slider/1mini.png">
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper swiperMini">
+            <div class="swiper-wrapper swiperMini__wrapper">
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/1mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/1mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/2mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/3mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/4mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/1mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/2mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/3mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/4mini.png">
+              </div>
+              <div class="swiper-slide swiperMini__slide">
+                <img class="swiperMini__image" src="./images/slider/1mini.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-box">
+              <p class="slider__item-title titleText">
+                SMOANT BATTLESTAR BABY POD - КРАСНЫЙ
+              </p>
+              <div class="rating">
+                <div class="rating__box">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <input class="rating__value" type="number" value="3.5">
+                </div>
+              </div>
+              <p class="slider__item-text">
+                Smoant Battlestar Baby Pod Kit – компактная и портативная картриджная система. Набор отличается тягой к
+                минимализму и превосходным дизайном. При этом картриджи, которые используются внутри него, вмещают до 2
+                миллилитров жидкости, а корпус Battlestar Baby скрывает внутри впечатляющий аккумулятор на 750 мАч, что
+                позволяет поддерживать продолжительное время парения без подзарядки.
+              </p>
+            </div>
+            <div class="slider__item-box">
+              <div class="slider__accordeon">
+                <div class="slider__accordeon-box">
+                  <div class="slider__accordeon-title">
+                    Особенности
+                    <div class="icon-plus slider__accordeon-icon"></div>
+                  </div>
+                  <div class="slider__accordeon-text">
+                    Также впечатляет и продуманная комплектация устройства – в коробке вы найдёте специальный шнурок,
+                    который не только позволяет носить Smoant Battlestar Baby как кулон на шее, но и заряжать его, ведь
+                    на
+                    шнурке располагается разъем
+                    для зарядки. Что ещё более интересно – на нём нанесён принт, позволяющий измерять этим шнуром до 80
+                    см, будто линейкой! Картриджная система Battlestar Baby Pod заряжается от современного разъема USB
+                    Type-C, что практически сводит к минимуму все ситуации, когда севший аккумулятор может застать вас
+                    врасплох.
+                  </div>
+                </div>
+                <div class="slider__accordeon-box">
+                  <div class="slider__accordeon-title">
+                    Наличие в магазинах
+                    <div class="icon-plus slider__accordeon-icon"></div>
+                  </div>
+                  <div class="slider__accordeon-text">
+                    <div class="slider__accordeon-list">
+                      <ul>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                        <li>
+                          <span>Адрес: Большая казачья, 103</span>
+                          <span>5 шт.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="slider__accordeon-box">
+                  <div class="slider__accordeon-title">
+                    Характеристики
+                    <div class="icon-plus slider__accordeon-icon"></div>
+                  </div>
+                  <div class="slider__accordeon-text">
+                    Также впечатляет и продуманная комплектация устройства – в коробке вы найдёте специальный шнурок,
+                    который не только позволяет носить Smoant Battlestar Baby как кулон на шее, но и заряжать его, ведь
+                    на
+                    шнурке располагается разъем
+                    для зарядки. Что ещё более интересно – на нём нанесён принт, позволяющий измерять этим шнуром до 80
+                    см, будто линейкой! Картриджная система Battlestar Baby Pod заряжается от современного разъема USB
+                    Type-C, что практически сводит к минимуму все ситуации, когда севший аккумулятор может застать вас
+                    врасплох.
+                  </div>
+                </div>
+                <div class="slider__accordeon-box">
+                  <div class="slider__accordeon-title">
+                    Обзор
+                    <div class="icon-plus slider__accordeon-icon"></div>
+                  </div>
+                  <div class="slider__accordeon-text">
+                    Также впечатляет и продуманная комплектация устройства – в коробке вы найдёте специальный шнурок,
+                    который не только позволяет носить Smoant Battlestar Baby как кулон на шее, но и заряжать его, ведь
+                    на
+                    шнурке располагается разъем
+                    для зарядки. Что ещё более интересно – на нём нанесён принт, позволяющий измерять этим шнуром до 80
+                    см, будто линейкой! Картриджная система Battlestar Baby Pod заряжается от современного разъема USB
+                    Type-C, что практически сводит к минимуму все ситуации, когда севший аккумулятор может застать вас
+                    врасплох.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item-boxBtn">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="slider__item-btn bigBtn">
+              добавить в корзину
+              <span>5 000</span>
+              руб
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="reviewProduct">
+    <div class="container">
+      <div class="reviewProduct__header">
+        <h3 class="reviewProduct__title">Отзывы</h3>
+        <a href="#modalReview" class="reviewProduct__btn btnBasket modalBtn">Оставить отзыв</a>
+      </div>
+      <div class="reviewProduct__wrapper">
+        <div class="reviewProduct__swiper">
+          <div class="reviewProduct__swiper-wrapper swiper-wrapper">
+            <div class="reviewProduct__card swiper-slide">
+              <div class="reviewProduct__card-header">
+                <div class="name">Имя</div>
+                <div class="rating">
+                  <div class="rating__box">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input class="rating__item" type="radio" name="star" value="1">
+                        <input class="rating__item" type="radio" name="star" value="2">
+                        <input class="rating__item" type="radio" name="star" value="3">
+                        <input class="rating__item" type="radio" name="star" value="4">
+                        <input class="rating__item" type="radio" name="star" value="5">
+                      </div>
+                    </div>
+                    <input class="rating__value" type="number" value="4">
+                  </div>
+                </div>
+              </div>
+              <div class="reviewProduct__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+            <div class="reviewProduct__card swiper-slide">
+              <div class="reviewProduct__card-header">
+                <div class="name">Имя</div>
+                <div class="rating">
+                  <div class="rating__box">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input class="rating__item" type="radio" name="star" value="1">
+                        <input class="rating__item" type="radio" name="star" value="2">
+                        <input class="rating__item" type="radio" name="star" value="3">
+                        <input class="rating__item" type="radio" name="star" value="4">
+                        <input class="rating__item" type="radio" name="star" value="5">
+                      </div>
+                    </div>
+                    <input class="rating__value" type="number" value="2">
+                  </div>
+                </div>
+              </div>
+              <div class="reviewProduct__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="reviewProduct__card swiper-slide">
+              <div class="reviewProduct__card-header">
+                <div class="name">Имя</div>
+                <div class="rating">
+                  <div class="rating__box">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input class="rating__item" type="radio" name="star" value="1">
+                        <input class="rating__item" type="radio" name="star" value="2">
+                        <input class="rating__item" type="radio" name="star" value="3">
+                        <input class="rating__item" type="radio" name="star" value="4">
+                        <input class="rating__item" type="radio" name="star" value="5">
+                      </div>
+                    </div>
+                    <input class="rating__value" type="number" value="5">
+                  </div>
+                </div>
+              </div>
+              <div class="reviewProduct__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+            <div class="reviewProduct__card swiper-slide">
+              <div class="reviewProduct__card-header">
+                <div class="name">Имя</div>
+                <div class="rating">
+                  <div class="rating__box">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input class="rating__item" type="radio" name="star" value="1">
+                        <input class="rating__item" type="radio" name="star" value="2">
+                        <input class="rating__item" type="radio" name="star" value="3">
+                        <input class="rating__item" type="radio" name="star" value="4">
+                        <input class="rating__item" type="radio" name="star" value="5">
+                      </div>
+                    </div>
+                    <input class="rating__value" type="number" value="5">
+                  </div>
+                </div>
+              </div>
+              <div class="reviewProduct__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviewProduct__swiper-nav">
+          <div class="reviewProduct__swiper-prev"></div>
+          <div class="reviewProduct__swiper-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="addition">
+    <div class="container">
+      <h2 class="addition__title title">С этим товаром покупают</h2>
+      <div class="addition__wrapper">
+        <div class="addition__swiper">
+          <div class="swiper-wrapper">
+            <div class="addition__item swiper-slide">
+              <div class="addition__item-box">
+                <img class="addition__image" src="./images/addition/1.png" alt="">
+              </div>
+              <p class="addition__name">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ И ГОЛУБИКА</p>
+              <p class="addition__text">Вкус: Грейпфрут и голубика</p>
+              <p class="addition__text addition__text--mb">Крепость: 0</p>
+              <div class="addition__btn btnBasket">
+                <p class="btnBascket__text">Добавить в корзину</p>
+                <p class="btnBasket__num">250 руб</p>
+              </div>
+            </div>
+            <div class="addition__item swiper-slide">
+              <div class="addition__item-box">
+                <img class="addition__image" src="./images/addition/2.png" alt="">
+              </div>
+              <p class="addition__name">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ И ГОЛУБИКА</p>
+              <p class="addition__text">Вкус: Грейпфрут и голубика</p>
+              <p class="addition__text addition__text--mb">Крепость: 0</p>
+              <div class="addition__btn btnBasket">
+                <p class="btnBascket__text">Добавить в корзину</p>
+                <p class="btnBasket__num">250 руб</p>
+              </div>
+            </div>
+            <div class="addition__item swiper-slide">
+              <div class="addition__item-box">
+                <img class="addition__image" src="./images/addition/3.png" alt="">
+              </div>
+              <p class="addition__name">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ И ГОЛУБИКА</p>
+              <p class="addition__text">Вкус: Грейпфрут и голубика</p>
+              <p class="addition__text addition__text--mb">Крепость: 0</p>
+              <div class="addition__btn btnBasket">
+                <p class="btnBascket__text">Добавить в корзину</p>
+                <p class="btnBasket__num">250 руб</p>
+              </div>
+            </div>
+            <div class="addition__item swiper-slide">
+              <div class="addition__item-box">
+                <img class="addition__image" src="./images/addition/3.png" alt="">
+              </div>
+              <p class="addition__name">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ И ГОЛУБИКА</p>
+              <p class="addition__text">Вкус: Грейпфрут и голубика</p>
+              <p class="addition__text addition__text--mb">Крепость: 0</p>
+              <div class="addition__btn btnBasket">
+                <p class="btnBascket__text">Добавить в корзину</p>
+                <p class="btnBasket__num">250 руб</p>
+              </div>
+            </div>
+            <div class="addition__item swiper-slide">
+              <div class="addition__item-box">
+                <img class="addition__image" src="./images/addition/3.png" alt="">
+              </div>
+              <p class="addition__name">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ И ГОЛУБИКА</p>
+              <p class="addition__text">Вкус: Грейпфрут и голубика</p>
+              <p class="addition__text addition__text--mb">Крепость: 0</p>
+              <div class="addition__btn btnBasket">
+                <p class="btnBascket__text">Добавить в корзину</p>
+                <p class="btnBasket__num">250 руб</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="addition__swiper-nav">
+          <div class="addition__swiper-prev"></div>
+          <div class="addition__swiper-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__item">
+        <div class="footer__item-box">
+          <div class="footer__item-content">
+            <a class="footer__link" href="catalog.html">Каталог</a>
+            <a class="footer__link" href="aboutAs.html">О нас</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+            <a class="footer__link" href="review.html">Обзоры</a>
+            <a class="footer__link" href="blog.html">Блог</a>
+          </div>
+          <div class="footer__item-content">
+            <a class="footer__phone" href="tel:+78452758583">+7 (8452) 75-85-83</a>
+            <a class="footer__link" href="">Политика конфиденциальности</a>
+            <div class="footer__item-social">
+              <a class="icon-tg footer__icon" href="#"></a>
+              <a class="icon-vk footer__icon" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="map" id="ymapsID">
+          <div class="contacts" style="display: none;">
+            <div class="contacts__item" id="addressesButtons"></div>
+            <div class="contacts__map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__item">
+        <p class="footer__text">©PROHOOK</p>
+        <div class="footer__development">
+          <a class="footer__development-link" href="#">Разработка сайта</a>
+          <img class="footer__development-image" src="./images/spaceapp.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a class="btnFixed modalBtn" href="#modal">Обратная связь</a>
+
+
+  <section class="modal" id="modal">
+    <div class="modal__inner">
+      <form class="modal__body" action="#">
+        <p class="modal__title titleText">заказать звонок</p>
+        <div class="modal__item">
+          <p class="modal__item-title">Имя</p>
+          <input class="modal__item-input" type="text" placeholder="Введите ваше имя">
+          <p class="modal__item-title">Телефон</p>
+          <input id="phone" class="modal__item-input" type="text" placeholder="Введите номер телефона">
+          <p class="modal__item-title">Комментарий</p>
+          <textarea class="modal__item-textarea" cols="30" rows="6" placeholder="Введите примечания"></textarea>
+        </div>
+        <div class="modal__btn bigBtn">
+          Отправить
+        </div>
+        <p class="modal__text">
+          Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для
+          других целей, описанных в нашей политике конфиденциальности.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <section class="modalReview modal" id="modalReview">
+    <form action="" class="modalReview__form">
+      <div class="modalReview__form-inner">
+        <div class="modalReview__form-item label">Имя</div>
+        <div class="modalReview__form-item label">Оценка</div>
+        <input class="modalReview__form-item input" name="name" type="text" placeholder="Введите ваше имя">
+        <div class="rating modalReview__form-item input" id="reviewRating">
+          <div class="rating__box">
+            <div class="rating__body">
+              <div class="rating__active"></div>
+              <div class="rating__items">
+                <input class="rating__item" type="radio" name="star" value="1">
+                <input class="rating__item" type="radio" name="star" value="2">
+                <input class="rating__item" type="radio" name="star" value="3">
+                <input class="rating__item" type="radio" name="star" value="4">
+                <input class="rating__item" type="radio" name="star" value="5">
+              </div>
+            </div>
+            <input class="rating__value" type="number" value="0" name="rating">
+          </div>
+        </div>
+        <div class="modalReview__form-item label wide">Отзыв</div>
+        <textarea class="modalReview__form-item input wide" name="review"></textarea>
+        <button class="bigBtn modalReview__form-item wide">Опубликовать отзыв</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="modalBasket" id="modalBasket">
+    <div class="modalBasket__inner">
+      <div class="modalBasket__content">
+        <div class="modalBasket__title titleText">
+          Корзина
+          <div class="icon-close modalBasket__title-icon"></div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/1.png" alt="">
+          <p class="modalBasket__item-text">
+            SMOANT BATTLESTAR BABY POD - КРАСНЫЙ
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/2.png" alt="">
+          <p class="modalBasket__item-text">
+            ЖИДКОСТЬ BRUSKO - ГРАНАТ С КИВИ
+            ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ
+            И гОЛУБИКА
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/3.png" alt="">
+          <p class="modalBasket__item-text">
+            ЖИДКОСТЬ BRUSKO - ГРАНАТ С КИВИ
+            ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ
+            И гОЛУБИКА
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modalBasket__content">
+        <div class="modalBasket__box">
+          <p class="modalBasket__sumText">Сумма:</p>
+          <div class="modalBasket__sum">
+            <span>2 150</span>
+            руб
+          </div>
+        </div>
+        <div class="modalBasket__btn bigBtn">
+          Перейти к оформлению
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="mask"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7f200460-1757-4936-b746-809cd67addbb&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+
+</html>

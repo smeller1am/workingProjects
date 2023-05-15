@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic-Regular.woff") format("woff"),
+    url("../fonts/CenturyGothic-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic-Bold.woff") format("woff"),
+    url("../fonts/CenturyGothic-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Regular'), 
+    local('../fonts/BebasNeueRegular'), 
+    url('../fonts/bebasneueregular.woff2') format('woff2'), 
+    url('../fonts/bebasneueregular.woff') format('woff'), 
+    url('../fonts/bebasneueregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Bold'), 
+    local('../fonts/BebasNeueBold'), 
+    url('../fonts/bebasneuebold.woff2') format('woff2'), 
+    url('../fonts/bebasneuebold.woff') format('woff'), 
+    url('../fonts/bebasneuebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

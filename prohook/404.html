@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+   <link rel="stylesheet" href="./css/style.css?v=1.22">
+</head>
+
+<body class="error">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__item">
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="aboutAs.html">
+                О нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="reviews.html">
+                Обзоры
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link openBasket" href="#modalBasket">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <a href="http://markup.spaceapp.ru/prohook2/">
+            <img class="logo" src="./images/logo.png" alt="логотип">
+          </a>
+        </div>
+        <div class="header__item">
+          <a class="menu__link" href="contacts.html">
+            Контакты
+          </a>
+          <a class="header__phone" href="tel:+78452758583">+7 (8452) 75-85-83</a>
+          <a class="header__basket" href="#modalBasket">
+            Корзина
+            <span class="header__basket-num">
+              3
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <section class="error__page">
+      <div class="error__page-title">404</div>
+      <div class="error__page-text">К сожалению данной страницы не существует</div>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__item">
+        <div class="footer__item-box">
+          <div class="footer__item-content">
+            <a class="footer__link" href="catalog.html">Каталог</a>
+            <a class="footer__link" href="aboutAs.html">О нас</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+            <a class="footer__link" href="review.html">Обзоры</a>
+            <a class="footer__link" href="blog.html">Блог</a>
+          </div>
+          <div class="footer__item-content">
+            <a class="footer__phone" href="tel:+78452758583">+7 (8452) 75-85-83</a>
+            <a class="footer__link" href="">Политика конфиденциальности</a>
+            <div class="footer__item-social">
+              <a class="icon-tg footer__icon" href="#"></a>
+              <a class="icon-vk footer__icon" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="map" id="ymapsID">
+          <div class="contacts" style="display: none;">
+            <div class="contacts__item" id="addressesButtons"></div>
+            <div class="contacts__map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__item">
+        <p class="footer__text">©PROHOOK</p>
+        <div class="footer__development">
+          <a class="footer__development-link" href="#">Разработка сайта</a>
+          <img class="footer__development-image" src="./images/spaceapp.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="btnFixed" data-fancybox data-src="#modal">Обратная связь</div>
+
+
+  <section class="modal" id="modal">
+    <div class="modal__inner">
+      <form class="modal__body" action="#">
+        <p class="modal__title titleText">заказать звонок</p>
+        <div class="modal__item">
+          <p class="modal__item-title">Имя</p>
+          <input class="modal__item-input" type="text" placeholder="Введите ваше имя">
+          <p class="modal__item-title">Телефон</p>
+          <input id="phone" class="modal__item-input" type="text" placeholder="Введите номер телефона">
+          <p class="modal__item-title">Комментарий</p>
+          <textarea class="modal__item-textarea" cols="30" rows="6" placeholder="Введите примечания"></textarea>
+        </div>
+        <div class="modal__btn bigBtn">
+          Отправить
+        </div>
+        <p class="modal__text">
+          Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для
+          других целей, описанных в нашей политике конфиденциальности.
+        </p>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="modalBasket" id="modalBasket">
+    <div class="modalBasket__inner">
+      <div class="modalBasket__content">
+        <div class="modalBasket__title titleText">
+          Корзина
+          <div class="icon-close modalBasket__title-icon"></div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/1.png" alt="">
+          <p class="modalBasket__item-text">
+            SMOANT BATTLESTAR BABY POD - КРАСНЫЙ
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/2.png" alt="">
+          <p class="modalBasket__item-text">
+            ЖИДКОСТЬ BRUSKO - ГРАНАТ С КИВИ
+            ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ
+            И гОЛУБИКА
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+        <div class="modalBasket__item">
+          <img class="modalBasket__item-image" src="./images/basket/3.png" alt="">
+          <p class="modalBasket__item-text">
+            ЖИДКОСТЬ BRUSKO - ГРАНАТ С КИВИ
+            ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ
+            И гОЛУБИКА
+          </p>
+          <div class="modalBasket__item-box">
+            <div class="slider__item-count count">
+              <div class="count__minus">-</div>
+              <div class="count__num">1</div>
+              <div class="count__plus">+</div>
+            </div>
+            <div class="modalBasket__item-num">
+              <span>1650</span>
+              руб
+            </div>
+            <div class="icon-close modalBasket__item-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modalBasket__content">
+        <div class="modalBasket__box">
+          <p class="modalBasket__sumText">Сумма:</p>
+          <div class="modalBasket__sum">
+            <span>2 150</span>
+            руб
+          </div>
+        </div>
+        <div class="modalBasket__btn bigBtn">
+          Перейти к оформлению
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="mask"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7f200460-1757-4936-b746-809cd67addbb&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+  <script src="plugins/shuffle-images/jquery.shuffle-images.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+
+</html>
