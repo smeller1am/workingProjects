@@ -1,0 +1,88 @@
+
+
+$breakpoint-to-fluid: 1367px;
+$breakpoint-to-sm: 720px;
+$base-vw: 1920px;
+
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+$container-test: 1110px;
+$container-lg: 1620px;
+$container-md: 720px;
+$container-sm: 540px;
+
+$p: 10px;
+$p-md: 10px;
+$p-test: 10px;
+
+$full-screen: 100vw;
+
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
+
+@mixin container {
+    $w-max: strip-unit($breakpoint-to-fluid);
+    $w-min: strip-unit($container-test);
+    $proportion: calc($w-max / $w-min);
+    $value: calc(100vw / #{$proportion});
+
+    width: 100%;
+    max-width: $value;
+    padding-left: $p;
+    padding-right: $p;
+    margin:0 auto;
+
+    @media screen and (max-width: $breakpoint-to-fluid) {
+        max-width: $container-test;
+        padding-left: $p-test;
+        padding-right: $p-test;
+    }
+
+     @media screen and (max-width: $breakpoint-lg) {
+         max-width: $container-md;
+     }
+
+     @media screen and (max-width: $breakpoint-md) {
+         max-width: $container-sm;
+         padding-left: $p-md;
+         padding-right: $p-md;
+     }
+
+     @media screen and (max-width: $breakpoint-sm) {
+         max-width: none;
+     }
+}
+
+
+
+
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+    $f-min: strip-unit($f-min);
+    $f-max: strip-unit($f-max);
+    $w-min: strip-unit($w-min);
+    $w-max: strip-unit($w-max);
+    $k: ($f-max - $f-min)/($w-max - $w-min);
+    $b: $f-min - $k * $w-min;
+    $b: $b + $units;
+    @return calc( #{$k} * 100vw + #{$b});
+}
+
+
+@mixin fluid($property, $f-min, $f-max, $w-min: $breakpoint-to-fluid, $w-max: $base-vw, $fallback: false) {
+    #{$property}: $f-min;
+    @media (min-width: $w-min) {
+        @if ($fallback) {
+            #{$property}: $fallback;
+        }
+        #{$property}: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
+    }
+    @media (min-width: $w-max) {
+        #{$property}: $f-max;
+    }
+}

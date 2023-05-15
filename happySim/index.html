@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/icon.css">
+  <link rel="stylesheet" href="./plugins/selectize/css/selectize.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css?v=1">
+  <title>Главная</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header__container">
+        <div class="header__left">
+          <div id="menu-btn" class="header__button">
+            <div class="header__button-icon icon-menu"></div>
+            <div class="header__button-text">Меню </div>
+          </div>
+          <img src="./img/Logo HappySim 1.svg" alt="" class="header__logo">
+          <div class="header__text ">Интернет-магазин тарифов и оборудования для интернета</div>
+        </div>
+        <div class="header__right">
+          <a href="#" class="header__item">
+            <div class="header__item-icon icon-search"></div>
+            <div class="header__item-text">Поиск</div>
+          </a>
+          <a href="#" class="header__item">
+            <div class="header__item-icon icon-cart"></div>
+            <div class="header__item-text">Корзина</div>
+          </a>
+        </div>
+    </div>
+    <div class="nav">
+      <div class="nav__container">
+        <div class="nav__wrapper">
+          <ul class="nav__left">
+            <li><a href="#" class="nav__left-item">Тарифы для интернета</a></li>
+            <li><a href="#" class="nav__left-item">Тарифы для звонков</a></li>
+            <li><a href="#" class="nav__left-item">Акции</a></li>
+            <li><a href="#" class="nav__left-item">Для партнеров</a></li>
+          </ul>
+          <div class="nav__right">
+            <div class="nav__right-phone">
+              <div class="nav__phone-text">Телефон поддержки</div>
+              <div class="nav__phone-number">
+                <div class="nav__phone-icon icon-phone"></div>
+                <a class="nav__phone-value" href="tel:+79603484444">+7 960 348 4444</a>
+              </div>
+            </div>
+            <div class="nav__right-links">
+              <a href="#" class="nav__right-link icon-whatsapp"> </a>
+              <a href="#" class="nav__right-link icon-vk"></a>
+              <a href="#" class="nav__right-link icon-telegram"></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div id="menu" class="menu offer">
+      <div class="  offer__blockLeft menu__box">
+        <div class="menu__left">
+          <div class="menu__left-top">
+            <a href="#" class="menu__left-btn btn">Обратный звонок</a>
+            <img src="./img/Logo HappySim 1.svg" alt="" class="menu__left-logo">
+          </div>
+          <div class="menu__nav">
+            <a href="#" class="menu__nav-item">Тарифы для интернета</a>
+            <a href="#" class="menu__nav-item">Тарифы для звонков</a>
+            <a href="#" class="menu__nav-item">Для партнеров</a>
+            <a href="#" class="menu__nav-item">Акции</a>
+          </div>
+          <div class="menu__navExtra">
+            <div class="menu__navExtra-column">
+              <a href="#" class="menu__navExtra-item">О компании</a>
+              <a href="#" class="menu__navExtra-item">Доставка и оплата</a>
+              <a href="#" class="menu__navExtra-item">Контакты</a>
+            </div>
+            <div class="menu__navExtra-column">
+              <a href="#" class="menu__navExtra-item">Сертификат</a href="#">
+              <a href="#" class="menu__navExtra-item">Вопрос/ответ</a href="#">
+              <a href="#" class="menu__navExtra-item">Лицензии</a href="#">
+            </div>
+          </div>
+          <div class="menu__socials">
+            <a href="#" class="menu__socials-item">
+                <img src="./img/yandex.png" alt="" class="menu__socials-logo">
+              <div class="menu__socials-stars">
+                <img src="./img/star.svg" alt="" class="menu__socials-star">
+                <img src="./img/star.svg" alt="" class="menu__socials-star">
+                <img src="./img/star.svg" alt="" class="menu__socials-star">
+                <img src="./img/star.svg" alt="" class="menu__socials-star">
+                <img src="./img/star-half.svg" alt="" class="menu__socials-star menu__socials-starHalf">
+                <span class="menu__socials-value">4.7</span>
+              </div>
+             
+            </a>
+            <a href="#" class="menu__socials-item">
+              <div class="menu__socials-icon icon-vk"></div>
+              <div class="menu__socials-text">Отзывы</div>
+            </a>
+            <a href="#" class="menu__socials-item">
+              <div class="menu__socials-icon icon-telegram"></div>
+              <div class="menu__socials-text">Канал
+                <div>“Happy Sim”</div></div>
+            </a>
+            <a href="#" class="menu__socials-item">
+              <div class="menu__socials-icon icon-telegram"></div>
+              <div class="menu__socials-text">Канал
+                <div>“Красиво всем”</div></div>
+            </a>
+          </div>
+          <div class="menu__phones">
+            <div class="menu__phones-item">
+              <div class="menu__phones-text">Телефон “Красиво всем”</div>
+              <div class="menu__phones-number">
+                <div class="menu__phones-icon icon-phone"></div>
+                <a class="menu__phones-value" href="tel:+7 960 348 4444">+7 960 348 4444</a>
+              </div>
+            </div>
+            <div class="menu__phones-item menu__phones-list">
+              <div class="menu__phones-text">Телефон поддержки</div>
+              <div class="menu__phones-number">
+                <div class="menu__phones-icon icon-phone"></div>
+                <a class="menu__phones-value" href="tel:+7 960 348 4444">+7 960 348 4444</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu__bottom">®HappySim</div>
+        </div>
+        <div class="menu__right">
+          <div id="close-btn" class="menu__right-close icon-close"></div>
+          <div class="menu__right-bottom">
+            <a href="#" class="menu__right-icon icon-whatsapp"></a>
+            <a href="#" class="menu__right-icon icon-vk"></a>
+            <a href="#" class="menu__right-icon icon-telegram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="menu-overlay" class="menu__overlay"></div>
+  <section class="content promo">
+    <div class="swiper promo__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильн ый интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="promo__container">
+            <div class="promo__content">
+              <div class="promo__title">
+                Лучшие тарифы Happy Sim
+              </div>
+              <div class="promo__text">
+                Безлимитный мобильный интернет без ограничения по трафику — это реальность. В нашем интернет-магазине вы можете купить сим-карту с выгодным Безлимитным тарифом любого оператора. Для простоты выбора сим-карты, рекомендуем воспользоваться фильтром.
+              </div>
+              <button class="btn promo__btn">Посмотреть все тарифы</button>
+            </div>
+          </div>
+          <div class="promo__wrapper">
+            <img class="promo__image" src="./img/promo.png" alt="">
+          </div>
+        </div>
+        </div>
+        <div class="content__container content__container--relative">
+          <div class="swiper-button-prev">
+            <div class="swiper-icon icon-arrow"></div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <div class="swiper-icon icon-arrow"></div>
+              <span></span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="content advantages">
+    <div class="content__container advantages__container">
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <img src="./img/rewards 1.png" alt="" class="advantages__item-img">
+          <div class="advantages__item-text">Работаем с 2011 года</div>
+        </div>
+        <div class="advantages__item">
+          <img src="./img/call-center 1.png" alt="" class="advantages__item-img">
+          <div class="advantages__item-text">Тех. поддержка 
+            <span>“Всегда на связи с Вами”</span></div>
+        </div>
+        <div class="advantages__item">
+          <img src="./img/file (4) 1.png" alt="" class="advantages__item-img">
+          <div class="advantages__item-text">Официальное
+            оформление</div>
+        </div>
+        <div class="advantages__item">
+          <img src="./img/guarantee (1) 1.png" alt="" class="advantages__item-img">
+          <div class="advantages__item-text">Полгода гарантии</div>
+        </div>
+        <div class="advantages__item">
+          <img src="./img/sim 1.png" alt="" class="advantages__item-img">
+          <div class="advantages__item-text">E-sim</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content services">
+    <div class="content__container services__container">
+      <div class="services__content">
+        <div class="services__title">Какие услуги мы предоставляем</div>
+      <div class="services__list">
+        <div class="services__list-item">
+          <img src="./img/Rectangle 6 (4).png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">Тарифы для интернета </div>
+            <div class="services__item-icon icon-arrow"></div>
+          </div>
+          
+        </div>
+        <div class="services__list-item">
+          <img src="./img/Rectangle 6 (3).png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">Тарифы для звонков </div>
+            <div class="services__item-icon icon-arrow"></div>
+          </div>
+        </div>
+        <div class="services__list-item">
+          <img src="./img/Rectangle 6 (2).png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">Сим-карты 
+              с саморегистрацией </div>
+              <div class="services__item-icon icon-arrow"></div>
+          </div>
+        </div>
+        <div class="services__list-item">
+          <img src="./img/Rectangle 6.png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">E-sim </div>
+            <div class="services__item-icon icon-arrow"></div>
+          </div>
+        </div>
+        <div class="services__list-item">
+          <img src="./img/Rectangle 612.png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">Оборудование </div>
+            <div class="services__item-icon icon-arrow"></div>
+          </div>
+        </div>
+        <div class="services__list-item">
+          <img src="./img/Rectangle 613.png" alt="" class="services__item-img">
+          <div class="services__wrapper">
+            <div class="services__item-text">B2B клиентам </div>
+            <div class="services__item-icon icon-arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="services__link">
+        <div class="services__link-text">Перейти в каталог</div>
+        <div class="services__link-icon icon-arrow"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="offer__item">
+      <div class="offer__blockLeft">
+          <div class="offer__title">Давай вместе</div>
+          <div class="offer__wrapper">
+            <div class="offer__text">Каждый может присоединится к благотворительным проектам от HappySim, для этого достаточно просто пользоваться услугами сотовой связи.</div>
+          <div class="offer__text">60 городов присутствия в России с единым тарифом 470 рублей в месяц, из которых 420 рублей это абонентская плата 
+            и 50 рублей переводится на благотворительность, ежемесячно, до тех пор пока абоненты будут пользоваться сим-картами.</div>
+          </div>
+            <div class="btn offer__btn">Купить СИМ-карту</div>
+      </div>
+      <img src="./img/Rectangle 7.svg" alt="" class="offer__img">
+  </div>
+  </section>
+  <section class="content partners">
+    <div class="content__container">
+      <div class="partners__header">
+        Мы работаем с такими партнерами как:
+      </div>
+      <div class="partners__content">
+        <div class="swiper-wrapper">
+          <a href="#"  class="swiper-slide partners__item"><img src="./img/rostelecom.png" alt=""></a>
+          <a href="#"  class="swiper-slide partners__item"><img src="./img/МТС 1.png" alt=""></a>
+          <a href="#" class="swiper-slide partners__item"><img src="./img/tele2.png" alt=""></a>
+          <a href="#" class="swiper-slide partners__item"><img src="./img/megafon.png" alt=""></a>
+          <a href="#" class="swiper-slide partners__item"><img src="./img/beeline.png" alt=""></a>
+          <a href="#" class="swiper-slide partners__item"><img src="./img/yota.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div class="map__content" id="mapYandex" ></div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__top-right">
+          <div class="footer__top-title">
+            Наше местоположение:
+          </div>
+          <div class="footer__top-place">
+            г. Саратов, ул. Н.Г. Чернышевского 153, этаж 5, офис 508
+          </div>
+          <a href="#" class=" btn footer__top-btn">Посмотреть на карте</a>
+        </div>
+        <div class="footer__top-left">
+          <div class="footer__left-link">Ссылки<div class="footer__left-icon icon-arrow"></div></div>
+          <div id="accordeon1" class="footer__left-item">
+            <a href="#" class="footer__left-text">
+              Тарифы для интернета
+            </a>
+            <a href="#" class="footer__left-text">
+              Тарифы для звонков
+            </a>
+            <a href="#" class="footer__left-text">
+              Акции
+            </a>
+            <a href="#" class="footer__left-text">
+              Для партнеров
+            </a>
+            <a href="#" class="footer__left-text">
+              О компании
+            </a>
+          </div>
+          <div id="accordeon2" class="footer__left-item">
+            <a href="#" class="footer__left-text">
+              Доставка и оплата
+            </a>
+            <a href="#" class="footer__left-text">
+              Контакты
+            </a>
+            <a href="#" class="footer__left-text">
+              Сертификат
+            </a>
+            <a href="#" class="footer__left-text">
+              Вопрос/ответ
+            </a>
+            <a href="#" class="footer__left-text">
+              Лицензии
+            </a>
+          </div>
+          <div class="footer__left-item">
+            <div class="footer__left-phone">
+              <div class="footer__phone-text">Телефон поддержки</div>
+              <div class="footer__phone-wrapper">
+                <div class="footer__phone-icon icon-phone"></div>
+                <a class="footer__phone-value" href="tel:+7 960 348 4444">+7 960 348 4444</a>
+              </div>
+            </div>
+            <div class="footer__left-phone">
+              <div class="footer__phone-text">Телефон “Красиво всем”</div>
+              <div class="footer__phone-wrapper">
+                <div class="footer__phone-icon icon-phone"></div>
+                <a class="footer__phone-value" href="tel:+7 960 348 4444">+7 960 348 4444</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__mid">
+        <div class="footer__mid-left">
+          <a href="#"><img src="./img/Logo HappySim 2.svg" alt="" class="footer__mid-logo"></a>
+          <div class="footer__mid-text">Интернет-магазин тарифов и оборудования для интернета</div>
+        </div>
+        <div class="footer__mid-center">
+          <a href="#" class="footer__center-text">Политика конфиденциальности</a>
+          <a href="#" class="footer__center-text">Согласие на обработку персональных данных </a>
+        </div>
+        <div class="footer__mid-right">
+          <a href="#" class="footer__mid-icon icon-whatsapp"></a>
+          <a href="#" class="footer__mid-icon icon-vk"></a>
+          <a href="#" class="footer__mid-icon icon-telegram"></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-item">
+          <div class="footer__bottom-privacy">®HappySim 2023</div>
+        </div>
+        <div class="footer__bottom-item">
+          <div class="footer__bottom-text">Разработка сайта</div>
+          <img src="./img/Group 269.svg" alt="" class="footer__bottom-logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="./plugins/jquery-3.6.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./plugins/selectize/js/selectize.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=01d2e4d1-dbd2-422b-bbba-3046535e318c&lang=ru_RU" type="text/javascript">
+</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js></script>
+<script src="./js/ymapCustom.js?v=2"></script>
+<script src="./js/script.js?v=1"></script>
+</body>
+</html>
