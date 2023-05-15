@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/icon.css">
+  <link rel="stylesheet" href="./plugins/selectize/css/selectize.css"/>
+  <link rel="stylesheet" href="./plugins/swiper/css/swiper.css"/>
+  <link rel="stylesheet" href="./css/style.css?v=1">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+        <div class="header__blockLeft">
+            <a href="##" class="header__logo">
+                <img src="./img/picture/logo.svg" alt="" class="header__logo-img">
+            </a>
+            <div class="header__wrapper">
+                <div class="header__iconCities icon-Subtract"></div>
+                <select class="header__cities" name="" id="">
+                    <option value="1">Санкт-Петербург</option>
+                </select>
+            </div>
+        </div>
+        <div class="header__blockCenter">
+            <div class="link">
+                <div class="link__icon icon-Phone"></div>
+                <a href="tel:+78129233054" class="link__text">+7 (812) 923-30-54</a>
+            </div>
+            <a href="##" class="btn">Обратный звонок</a>
+        </div>
+        <div class="header__blockRight">
+            <form action="" class="search">
+                <input type="text" placeholder="Что вы ищете?" class="search__input">
+                <button class="search__button icon-search"></button>
+            </form>
+            <div class="info">
+                <a href="" class="info__icon icon-profile"></a>
+                <a href="" class="info__icon icon-favorite">
+                    <div class="info__number">32</div>
+                </a>
+                <a href="" class="info__icon icon-cart">
+                    <div class="info__number">3</div>
+                </a>
+            </div>
+        </div>
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav__container">
+            <div class="nav__mobile">
+                <a href="##" class="btn btn--mobile">Обратный звонок</a>
+                <div class="link link--mobile">
+                    <div class="link__icon icon-Phone"></div>
+                    <a href="tel:+78129233054" class="link__text">+7 (812) 923-30-54</a>
+                </div>
+                <form action="" class="search">
+                    <input type="text" placeholder="Что вы ищете?" class="search__input">
+                    <button class="search__button icon-search"></button>
+                </form>
+                <div class="info">
+                    <a href="" class="info__icon icon-profile"></a>
+                    <a href="" class="info__icon icon-favorite">
+                        <div class="info__number">32</div>
+                    </a>
+                    <a href="" class="info__icon icon-cart">
+                        <div class="info__number">3</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav__pages">
+                <a href="" class="nav__pages-firstItem">
+                    <div class="nav__pages-icon icon-Menu"></div>
+                    <div class="nav__pages-text">Каталог товаров</div>
+                </a>
+                <ul class="nav__pages-secondItem">
+                    <li class="nav__pages-item"><a href="" >Сантехника</a></li>
+                    <li class="nav__pages-item"><a href="" >Кафельная плитка</a></li>
+                    <li class="nav__pages-item"><a href="" >Зеркала</a></li>
+                    <li class="nav__pages-item"><a href="" >Акции</a></li>
+                    <li class="nav__pages-item"><a href="" >Бренды</a></li>
+                    <li class="nav__pages-item"><a href="" >Дизайнерам</a></li>
+                    <li class="nav__pages-item"><a href="" >Контакты</a></li>
+                </ul>
+            </div>
+            <div class="nav__social">
+                <a href="" class="nav__social-link icon-Vk"></a>
+                <a href="" class="nav__social-link icon-Odnoklassniki"></a>
+                <a href="" class="nav__social-link icon-Youtube"></a>
+                <a href="" class="nav__social-link icon-Telegram"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="content content--mobileMarginTop">
+  <div class="content__container">
+    <div class="breadcrumbs">
+      <a href="" class="breadcrumbs__link">Главная</a>
+      <a href="" class="breadcrumbs__link">Корзина</a>
+      <a href="" class="breadcrumbs__link">Оформление заказа</a>
+    </div>
+    <div class="title title--width">Оформление заказа</div>
+    <div class="content__ordering">
+      <div class="content__ordering-left">
+        <div class="content__ordering-reciever">
+          <div class="content__ordering-title">Получатель</div>
+          <p class="content__ordering-text content__ordering-text--mark">Имя</p>
+          <input type="text" class="content__ordering-input">
+          <p class="content__ordering-text content__ordering-text--mark">Фамилия</p>
+          <input type="text" class="content__ordering-input">
+          <p class="content__ordering-text content__ordering-text--mark">Телефон</p>
+          <input type="text" class="content__ordering-input">
+          <p class="content__ordering-text">Email</p>
+          <input type="text" class="content__ordering-input content__ordering-input--last">
+          <input type="checkbox" class="content__ordering-checkbox" name="reciever-checkbox" id="reciever-checkbox">
+          <label class="content__ordering-label" for="reciever-checkbox">Я хочу получать оповещения о рекламе и новых товарах</label>
+        </div>
+        <div class="content__ordering-payment">
+          <div class="content__ordering-title">Способ оплаты</div>
+          <form>
+            <div class="content__ordering-radio content__ordering-radio--active">
+              <input class="content__ordering-radioInput" value="1" type="checkbox" name="payment-checkbox-1" id="payment-checkbox-1">
+              <label class="content__ordering-radioLabel" for="payment-checkbox-1">
+                <div class="content__ordering-radioWrapper">
+                  <div class="content__ordering-radioTitle">При получении</div>
+                  <div class="content__ordering-radioText">Наличными или картой</div>
+                </div>
+              </label>
+            </div>
+            <div class="content__ordering-radio">
+              <input class="content__ordering-radioInput" value="2" type="checkbox" name="payment-checkbox-2" id="payment-checkbox-2">
+              <label class="content__ordering-radioLabel" for="payment-checkbox-2">
+                <div class="content__ordering-radioWrapper">
+                  <div class="content__ordering-radiToitle">Онлайн</div>
+                  <div class="content__ordering-radioText">Mastercard, Visa, МИР, SberPay и СБП</div>
+                </div>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="content__ordering-extra">
+          <div class="content__ordering-title">Дополнительно</div>
+          <textarea class="content__ordering-textarea" placeholder="Комментарий к заказу" name="" id="" cols="30" rows="7"></textarea>
+        </div>
+      </div>
+      <div class="content__ordering-right">
+        <div class="content__cartTotal content__cartTotal--width">
+          <div class="content__cartTotal-form content__cartTotal-form--alt">
+           <input class="content__cartTotal-input content__cartTotal-input--alt" type="text" placeholder="Промокод">
+           <button class="content__cartTotal-button content__cartTotal-button--alt">Применить</button>
+          </div>
+          <div class="content__cartTotal-amount">
+           <div class="content__cartTotal-amountText">Товары (3)</div>
+           <div class="content__cartTotal-amountValue">35 801 ₽</div>
+          </div>
+          <div class="content__cartTotal-sale">
+           <div class="content__cartTotal-saleText">Скидка</div>
+           <div class="content__cartTotal-saleValue">- 800 ₽</div>
+          </div>
+          <div class="content__cartTotal-sum">
+           <div class="content__cartTotal-sumText">Итого</div>
+           <div class="content__cartTotal-sumValue">35 001 ₽</div>
+          </div>
+          <button class="btnBlue content__cartTotal-blueBtn">Оформить заказ</button>
+          <div class="content__cartTotal-info">Дата и стоимость самовывоза определяются 
+           при оформлении заказа</div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__container">
+     <div class="footer__topBlock">
+      <div class="footer__leftBlock">
+          <a href="##" class="footer__logo">
+              <img src="./img/picture/logo-footer.svg" alt="" class="footer__logo-img">
+          </a>
+          <div class="footer__minText">
+              Санкт-Петербург, Комендантский пр. 4
+          </div>
+          <div class="footer__minText">
+              ТК Строй Дом секция 1Б
+          </div>
+          <div class="footer__minText">
+              Пн-Пт 11.00 - 20.00
+          </div>
+      </div>
+      <div class="footer__centerBlock">
+          <ul class="footer__links">
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Сантехника</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Мебель для ванной</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Кафельная плитка</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Зеркала</a>
+              </li>
+          </ul>
+          <ul class="footer__links">
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Сантехника</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Мебель для ванной</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Кафельная плитка</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Зеркала</a>
+              </li>
+          </ul>
+          <ul class="footer__links">
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Оплата</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Доставка</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Поставщикам</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Блог</a>
+              </li>
+              <li class="footer__links-item">
+                  <a href="##" class="footer__links-link">Контакты</a>
+              </li>
+          </ul>
+      </div>
+      <div class="footer__accordion" id="accordion">
+          <div class="footer__accordion-text">Ссылки</div>
+          <div class="footer__accordion-container">
+              <ul class="footer__links">
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Сантехника</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Мебель для ванной</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Кафельная плитка</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Зеркала</a>
+                  </li>
+              </ul>
+              <ul class="footer__links">
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Сантехника</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Мебель для ванной</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Кафельная плитка</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Зеркала</a>
+                  </li>
+              </ul>
+              <ul class="footer__links">
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Оплата</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Доставка</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Поставщикам</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Блог</a>
+                  </li>
+                  <li class="footer__links-item">
+                      <a href="##" class="footer__links-link">Контакты</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer__blockBall">
+          <div class="footer__blockBall-text">Оцените наш магазин</div>
+          <a href="##" class="footer__blockBall-link"><img src="./img/picture/ya_market.svg" alt="" class="footer__blockBall-icon"></a>
+      </div>
+      <div class="footer__rightBlock">
+          <div class="footer__wrapper">
+              <div class="footer__icon icon-Phone"></div>
+              <a href="tel:+78129233054" class="footer__telefon">+7 (812) 923-30-54</a>
+          </div>
+          <a href="##" class="footer__btn">Обратный звонок</a>
+          <div class="footer__social">
+              <a href="" class="footer__social-icon icon-Vk"></a>
+              <a href="" class="footer__social-icon icon-Odnoklassniki"></a>
+              <a href="" class="footer__social-icon icon-Youtube"></a>
+              <a href="" class="footer__social-icon icon-Telegram"></a>
+          </div>
+      </div>
+     </div>
+     <div class="footer__bottomBlock">
+      <div class="footer__text">© 2010 - 2022 Фосан Сантехника. Мебель для ванной. Кафельная плитка. Зеркала</div>
+      <a href="https://spaceapp.ru/razrabotka" class="footer__link">
+          <div class="footer__link-text">
+              Разработка сайта
+          </div>
+          <img src="./img/picture/spaceapp.svg" alt="" class="footer__link-icon">
+      </a>
+     </div>
+  </div>
+</footer>  
+<script src="./plugins/jquery-3.6.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./plugins/selectize/js/selectize.js"></script>
+<script src="./plugins/swiper/js/swiper.js"></script>
+<script src="./js/script.js?v=1"></script>
+</body>
+</html>
